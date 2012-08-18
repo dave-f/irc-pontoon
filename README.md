@@ -2,7 +2,6 @@ irc-pontoon
 ====
 
 A simple IRC bot using Python and Twisted Matrix, incorporating a multi-player (player verus player) variant of Pontoon ("Blackjack") which is played in the IRC channel.
-----
 
 Before you start
 ----
@@ -31,13 +30,13 @@ Just passing a space character as a nickname will effectively unset any nickname
 Winning hand types
 ----
 
-Winners are decided based upon the best hands, and winning players are payed bonuses according to their hand type. The order of winning hands in shed pontoon is:
+Winners are decided based upon the best hands, and winning players are payed bonuses according to their hand type:
 
 * Shed pontoon - 3 7s of any suit ( 7x bonus )
 * 5 card trick totalling 21 ( 4x bonus )
 * 5 card trick ( 3x bonus )
 * Traditional pontoon - Ace and a ten or picture card ( 2x bonus )
-* Clown Wagon bonus - Only remaining player and has stuck on 16 ( 1.5x bonus )
+* Clown Wagon bonus - Only remaining player and hand is 16 ( 1.5x bonus )
 * High cards - Highest total ( No bonus; just pays the stake back )
 
 Starting the game
@@ -49,9 +48,13 @@ A game is started with the command (entered into the irc channel):
 !pontoon < playerlist >
 ````
 
-For example: !pontoon dave kevin bob
+For example: 
 
-Subsequent `!pontoon' commands with no arguments will start a game with the players specified previously, and rotate this list every game.
+````
+!pontoon dave kevin bob
+````
+
+Note that all players must be present in the channel _and_ have an entry in the players.xml file.  Subsequent `!pontoon' commands with no arguments will start a game with the players specified previously, and rotate this list every game.
 
 Each player is then dealt a card, and a turn of betting begins.
 
@@ -63,13 +66,13 @@ Dealing proceeds in the order passed to the `!pontoon' command. Initial bets are
 Maximum initial bets
 ----
 
-Maximum bets are governed by how many people are in the game. This is to avoid single player games racking up huge wins due to increased odds. Currently this is configured thus:
+Maximum bets are governed by how many people are in the game. This is to avoid single player games racking up huge wins due to increased odds.  This is set as:
 
-1 player - 1% of players' total chips
-2 players - 10% of players' total chips
-3 players - 20% of players' total chips
-4 players - 25% of players' total chips
-5+ players - 50% of players' total chips
+* 1 player - 1% of players' total chips
+* 2 players - 10% of players' total chips
+* 3 players - 20% of players' total chips
+* 4 players - 25% of players' total chips
+* 5+ players - 50% of players' total chips
 
 Further betting rounds
 ----
@@ -91,9 +94,8 @@ If a player has 2 cards with a total of 14 (not including aces) they may elect t
 SPLIT
 If a player is dealt 2 cards of the same denomination, they may choose to split. This creates a new hand and places the initial bet on the second hand. This may be done up to 4 times, and each hand is then played in turn, normally.
 
-----
-
 Winning calculations
+----
 
 At the end of the game, the winning hand(s) are paid. If there are multiple winning hands they all win. In the case of players having several hands (ie they have split) each hand is counted independently. So for example:
 
