@@ -19,6 +19,21 @@ Run the bot by typing:
 
 It will join the IRC server at the address specified in __main__, and connect to the channel defined at the top of the file.
 
+Players XML file and the bank
+----
+
+Each player needs their own entry in the *players.xml* file.  This maps their IRC nickname against the chips they have, as well as some basic statistic (games played and won, etc).  It also has the concept of a *bank*, in which each player can deposit/withdraw their chips for safety.
+
+To bank 200 of your chips do the following:
+````
+!bank 200
+````
+
+Withdrawing 200 from the bank into your current working funds is similar:
+````
+!bank -200
+````
+
 How to play
 ----
 

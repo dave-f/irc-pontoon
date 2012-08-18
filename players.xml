@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <!-- Add a new 'player' element for each player -->
 <!-- The <nick> field specifies the irc nick -->
-<shedplayers date="06/12/2004" title="Shed games players">
+<shedplayers date="06/12/2004" title="Games players">
   <player>
     <nick>dave</nick>
     <chips>1000</chips>
