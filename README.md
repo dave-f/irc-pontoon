@@ -1,5 +1,5 @@
 irc-pontoon
-====
+----
 
 A simple IRC bot using Python and Twisted Matrix, incorporating a multi-player (player verus player) variant of Pontoon ("Blackjack") which is played in the IRC channel.
 
@@ -14,7 +14,7 @@ Running
 Run the bot by typing:
 
 ````
-./PontoonBot.py"
+./PontoonBot.py
 ````
 
 It will join the IRC server at the address specified in __main__, and connect to the channel defined at the top of the file.
@@ -53,7 +53,7 @@ Starting the game
 A game is started with the command (entered into the irc channel):
 
 ````
-!pontoon < playerlist >
+!pontoon <playerlist>
 ````
 
 For example: 
@@ -87,19 +87,19 @@ Further betting rounds
 
 After initial bets, players compete to try and attain the best possible hand before either sticking or busting. Shed pontoon supports sticking, twisting, buying, burning and splitting (up to 4 times). After each player has finished playing, winning calculations are performed, and bets paid.
 
-STICK
+*STICK*  
 If a player has 16 or over, they may stick.
 
-TWIST
+*TWIST*  
 A player may twist to get another card from the dealer. Once a player twists, buying a card is not possible.
 
-BUY
+*BUY*  
 Buying a card costs the player their initial bet, and has the advantages that the other players can't see the card, and also will contribute to their winning pot if this hand wins.
 
-BURN
+*BURN*  
 If a player has 2 cards with a total of 14 (not including aces) they may elect to 'burn'. This costs them their initial bet, and gets them a fresh hand. There is no limit to the amount of times a player may burn if they get multiple hands meeting the burn criteria.
 
-SPLIT
+*SPLIT*  
 If a player is dealt 2 cards of the same denomination, they may choose to split. This creates a new hand and places the initial bet on the second hand. This may be done up to 4 times, and each hand is then played in turn, normally.
 
 Winning calculations
