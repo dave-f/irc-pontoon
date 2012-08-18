@@ -33,20 +33,21 @@ Winning hand types
 
 Winners are decided based upon the best hands, and winning players are payed bonuses according to their hand type. The order of winning hands in shed pontoon is:
 
-Shed pontoon - 3 7s of any suit ( 7x bonus )
-5 card trick totalling 21 ( 4x bonus )
-5 card trick ( 3x bonus )
-Traditional pontoon - Ace and a ten or picture card ( 2x bonus )
-Clown Wagon bonus - Only remaining player and has stuck on 16 ( 1.5x bonus )
-High cards - Highest total ( No bonus; just pays the stake back )
-If a player has one and only one normal 16 hand, and other players have bust, they will pick up a "clown wagon" bonus of 1.5x their stake
+* Shed pontoon - 3 7s of any suit ( 7x bonus )
+* 5 card trick totalling 21 ( 4x bonus )
+* 5 card trick ( 3x bonus )
+* Traditional pontoon - Ace and a ten or picture card ( 2x bonus )
+* Clown Wagon bonus - Only remaining player and has stuck on 16 ( 1.5x bonus )
+* High cards - Highest total ( No bonus; just pays the stake back )
 
 Starting the game
 ----
 
 A game is started with the command (entered into the irc channel):
 
+````
 !pontoon < playerlist >
+````
 
 For example: !pontoon dave kevin bob
 
