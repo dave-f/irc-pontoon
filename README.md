@@ -112,7 +112,7 @@ A player may twist to get another card from the dealer. Once a player twists, bu
 Buying a card costs the player their initial bet, and has the advantages that the other players can't see the card, and also will contribute to their winning pot if this hand wins.
 
 *BURN*  
-If a player has 2 cards with a total of 14 (not including aces) they may elect to 'burn'. This costs them their initial bet, and gets them a fresh hand. There is no limit to the amount of times a player may burn if they get multiple hands meeting the burn criteria.
+If a player has 2 cards with a total of 14 (not including aces) they may elect to burn. This costs them their initial bet, and gets them a fresh hand. There is no limit to the amount of times a player may burn if they get multiple hands meeting the burn criteria.
 
 *SPLIT*  
 If a player is dealt 2 cards of the same denomination, they may choose to split. This creates a new hand and places the initial bet on the second hand. This may be done up to 4 times, and each hand is then played in turn, normally.
