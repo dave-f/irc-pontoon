@@ -1,7 +1,7 @@
 irc-pontoon
 ----
 
-A simple IRC bot using Python and Twisted Matrix, incorporating a multi-player (player verus player) variant of Pontoon ("Blackjack") which is played in the IRC channel.
+A simple IRC bot using Python and Twisted Python, incorporating a multi-player (player verus player) variant of Pontoon ("Blackjack"), loosely called *Shed Pontoon*, which is played in the IRC channel.
 
 Before you start
 ----
@@ -107,23 +107,25 @@ Winning calculations
 
 At the end of the game, the winning hand(s) are paid. If there are multiple winning hands they all win. In the case of players having several hands (ie they have split) each hand is counted independently. So for example:
 
+````
 Bob, 21, Pontoon
 Bob, 20, Normal
 Dave, 16, Normal
-
+````
 Bob would win on both hands and Dave would lose on his 16. However, if the hands were:
 
+````
 Bob, 21, Pontoon
 Kevin, 21, Pontoon
 Bob, 18, Normal
-
+````
 Both Bob and Kevin would win on their pontoon hands but Bob would lose on his 18 hand.
 
 If 2 players have split and have the same hands, they would both win on both hands providing no other hands beat them, ie:
-
+`````
 Bob, 21, Pontoon
 Bob, 18, Normal
 Dave, 21, Pontoon
 Dave, 18, Normal
-
+````
 Would pay Bob and Dave on both hands, but if Kevin had a 19 hand, Bob and Dave would only win on their pontoons.
