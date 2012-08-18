@@ -22,9 +22,9 @@ It will join the IRC server at the address specified in __main__, and connect to
 Players XML file and the bank
 ----
 
-Each player needs their own entry in the *players.xml* file.  This maps their IRC nickname against the chips they have, as well as some basic statistic (games played and won, etc).  It also has the concept of a *bank*, in which each player can deposit/withdraw their chips for safety.
+Each player needs their own entry in the *players.xml* file.  This maps their IRC nickname against the chips they have, as well as some basic statistics (games played and won, etc).  It also has the concept of a *bank*, in which each player can deposit/withdraw their chips for safety.  Of course the XML file can be manually edited.
 
-To bank 200 of your chips do the following:
+To bank 200 of your chips do the following (in the IRC channel):
 ````
 !bank 200
 ````
@@ -65,7 +65,7 @@ Winners are decided based upon the best hands, and winning players are payed bon
 Starting the game
 ----
 
-A game is started with the command (entered into the irc channel):
+A game is started with the command (entered into the IRC channel):
 
 ````
 !pontoon <playerlist>
@@ -144,3 +144,8 @@ Dave, 21, Pontoon
 Dave, 18, Normal
 ````
 Would pay Bob and Dave on both hands, but if Kevin had a 19 hand, Bob and Dave would only win on their pontoons.
+
+Issues and bugs
+----
+
+Please report any issues or bugs you may find and I will do my best to fix them.
