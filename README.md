@@ -11,7 +11,13 @@ You will need [Twisted Python](http://twistedmatrix.com)
 Running
 ----
 
-Run the bot by typing "./PontoonBot.py".  It will join the IRC server at the address specified in __main__, and connect to the channel defined at the top of the file.
+Run the bot by typing:
+
+````
+./PontoonBot.py"
+````
+
+It will join the IRC server at the address specified in __main__, and connect to the channel defined at the top of the file.
 
 How to play
 ----
@@ -23,7 +29,9 @@ Nicknames
 
 Players may elect to have a nickname, and change it as they wish. This is done using the command:
 
+````
 /msg <bot-name> set nickname <new-nickname>
+`````
 
 Just passing a space character as a nickname will effectively unset any nickname.
 
@@ -54,14 +62,14 @@ For example:
 !pontoon dave kevin bob
 ````
 
-Note that all players must be present in the channel _and_ have an entry in the players.xml file.  Subsequent `!pontoon' commands with no arguments will start a game with the players specified previously, and rotate this list every game.
+Note that all players must be present in the channel _and_ have an entry in the players.xml file.  Subsequent `!pontoon` commands with no arguments will start a game with the players specified previously, and rotate this list every game.
 
 Each player is then dealt a card, and a turn of betting begins.
 
 Playing the game
 ----
 
-Dealing proceeds in the order passed to the `!pontoon' command. Initial bets are placed for each player (see below for maximum inital bets). When this round is over, the next round begins where players attempt to get the best hand possible.
+Dealing proceeds in the order passed to the `!pontoon` command. Initial bets are placed for each player. When this round is over, the next round begins where players attempt to get the best hand possible.
 
 Maximum initial bets
 ----
