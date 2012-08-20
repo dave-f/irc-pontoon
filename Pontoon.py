@@ -170,7 +170,6 @@ class Player:
             TheDealer.IRCObject.msg(self.GetNick(),self.BuildOptionsString())
         else:
             TheDealer.IRCObject.msg(self.GetNick(),"Cannot burn with this hand!")
-        pass
 
     def Split(self, TheDealer):
         if ( self.CanSplit() ):
@@ -255,7 +254,7 @@ class Player:
         return self.__TotalBetThisGame[HandNumber]
 
     def CanStick(self):
-        # Can only stick if less than 15 or has a 5 card trick
+        # Can't stick if less than 16 and we don't have a 5 card trick
         if ( (self.GetMaxScore(self.__PlayingHand) <= 15) and ( len(self.TheHand[self.__PlayingHand]) < 5) ):
             return False
         else:
