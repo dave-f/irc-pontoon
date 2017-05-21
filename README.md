@@ -137,7 +137,7 @@ Bob, 18, Normal
 Both Bob and Kevin would win on their pontoon hands but Bob would lose on his 18 hand.
 
 If 2 players have split and have the same hands, they would both win on both hands providing no other hands beat them, ie:
-`````
+````
 Bob, 21, Pontoon
 Bob, 18, Normal
 Dave, 21, Pontoon
