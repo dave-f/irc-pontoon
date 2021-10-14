@@ -1,7 +1,7 @@
 irc-pontoon
 ----
 
-A simple IRC bot using Python and Twisted Python, incorporating a multi-player (player verus player) variant of Pontoon ("Blackjack"), loosely called *Shed Pontoon*, which is played in the IRC channel.
+A simple IRC bot using Python and Twisted Python, incorporating a multi-player (player versus player) variant of Pontoon ("Blackjack"), loosely called *Shed Pontoon*, which is played in the IRC channel.
 
 Before you start
 ----
